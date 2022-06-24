@@ -6,12 +6,23 @@ package com.myspace.jbpmgitproject;
 
 public class Employee implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Employee() {
-    }
+	private java.math.BigDecimal salary;
 
+	public Employee() {
+	}
 
+	public java.math.BigDecimal getSalary() {
+		return this.salary;
+	}
 
+	public void setSalary(java.math.BigDecimal salary) {
+		this.salary = salary;
+	}
+
+	public Employee(java.math.BigDecimal salary) {
+		this.salary = salary;
+	}
 
 }
